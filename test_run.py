@@ -1,12 +1,19 @@
+
+
 from backend.text_to_sql_langgraph_flow import run_text_to_sql
 
-m=input("enter the query ")
+m = input("Enter your query: ")
 
 response = run_text_to_sql(
     user_input=m,
-    role="ADMIN",
-    user_id=101
+    role="INTERN",
+    user_id=104
 )
 
-print(response)
+print("\nGenerated SQL Query:")
+print(response["query"])
+print("\nFinal Result:")
+print(response["result"])
+
+
 
