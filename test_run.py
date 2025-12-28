@@ -96,6 +96,7 @@ def execute():
 
     return render_template(
         "result.html",
+        sql=sql,
         columns=result["columns"],
         rows=result["rows"],
         show_confirm=False
@@ -111,3 +112,4 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
