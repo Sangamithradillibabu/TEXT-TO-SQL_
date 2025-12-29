@@ -1,5 +1,6 @@
 Text-to-SQL is an AI technique that converts natural language questions into SQL queries, allowing users to interact with databases without knowing SQL.
-
+This project uses the OpenRouter API for LLM-based text-to-SQL generation.
+For security reasons, API keys are not included in the repository.
 INSTALLATION AND SET UP
 pip install Flask
 pip install Flask-Session
